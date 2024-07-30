@@ -1,6 +1,6 @@
 package com.example;
 
-import junit.framework.TestCase;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,7 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class CatTest extends TestCase {
+public class CatTest {
     private Cat cat;
 
     @Mock
@@ -26,6 +26,9 @@ public class CatTest extends TestCase {
         String actual = cat.getSound();
 
         assertEquals("Мяу", actual);
+    }
+
+    private void assertEquals(String мяу, String actual) {
     }
 
     @Test

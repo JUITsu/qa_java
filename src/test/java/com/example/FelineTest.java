@@ -1,14 +1,16 @@
 package com.example;
 
-import junit.framework.TestCase;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(MockitoJUnitRunner.class)
-public class FelineTest extends TestCase {
+public class FelineTest  {
     private final String expected = "Кошачьи";
     private static final int EXPECTED_KITTENS_COUNT_FOR_MOCK = 1;
     private int kittensCount = 5;

@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class AnimalTestGetFood {
+public class AnimalGetFoodTest {
     private Animal animal;
     private static final String ANIMAL_KIND_HERBIVORE = "Травоядное";
     private static final String ANIMAL_KIND_PREDATOR = "Хищник";
@@ -20,7 +20,7 @@ public class AnimalTestGetFood {
     private String animalKind;
     private List<String> foods;
 
-    public AnimalTestGetFood(String animalKind, List<String> foods) {
+    public AnimalGetFoodTest(String animalKind, List<String> foods) {
         this.animalKind = animalKind;
         this.foods = foods;
     }
